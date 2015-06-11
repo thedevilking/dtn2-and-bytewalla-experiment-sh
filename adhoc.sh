@@ -55,7 +55,7 @@ if [ $add_adhoc0 -eq 1 ];then
 fi
 
 if [ $adhoc0_up -eq 1 ];then
-	iw dev adhoc0 ibss join edison 2412
+	iw dev adhoc0 ibss join edison 2412 02:11:87:6E:84:00
 	if [ $? -eq 0 ];then
 		adhoc0_join=1
 		echo "iw dev adhoc0 ibss join done!"
